@@ -11,6 +11,3 @@ RUN luarocks install qtlua
 RUN git clone https://github.com/deepmind/torch-hdf5.git
 RUN cd torch-hdf5 && mkdir build && cd build && cmake ..
 RUN cd torch-hdf5/build && make -j10 && make install
-
-# Clone the repository.
-RUN git clone https://github.com/anewell/pose-hg-demo.git
